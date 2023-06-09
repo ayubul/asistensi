@@ -21,8 +21,30 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'css/site.css',
+        'template/CSS/core.css',
+        'template/CSS/components.css',
+        'template/CSS/icons.css',
+        'template/CSS/pages.css',
+        'template/CSS/responsive.css',
+    
     ];
     public $js = [
+        'template/js/modernizr.min.js',
+        'template/js/bootstrap.min.js',
+        'template/js/detect.js',
+        'template/js/fastclick.js',
+        'template/js/jquery.slimscroll.js',
+        'template/js/jquery.blockUI.js',
+        'template/js/waves.js',
+        'template/js/wow.min.js',
+        'template/js/jquery.nicescroll.js',
+        'template/js/jquery.scrollTo.min.js',
+        'template/js/jquery.scrollTo.min.js',
+        'template/js/jquery.app.js',
+
+
+
+
     ];
     public $depends = [
         'yii\web\YiiAsset',

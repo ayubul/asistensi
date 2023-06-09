@@ -2,16 +2,20 @@
 
 namespace app\controllers;
 
+use app\models\Mahasiswa087;
+use yii\data\ActiveDataProvider;
+
 class MahasiswaController extends \yii\web\Controller
 {
-    public function actionProfil()
+    public function actionIndex()
     {
-        return $this->render('profil');
+        $query = Mahasiswa087::find();
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query
+        ]);
+        return $this->render('index', [
+            'dataProvider' => $dataProvider 
+        ]);    
     }
-    public function actionDetail($id)
-    {
-        return "<h1>ini hasilnya</h1>";
-    }
-
-
 }
+?>
